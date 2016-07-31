@@ -75,9 +75,8 @@ static void scm_disable_sdi(void);
 /* Runtime could be only changed value once.
  * There is no API from TZ to re-enable the registers.
  * So the SDI cannot be re-enabled when it already by-passed.
- */
-/* set default download mode as 0 to avoid device enter dump */
-static int download_mode = 0;
+*/
+static int download_mode = 1;
 static struct kobject dload_kobj;
 
 #ifdef CONFIG_MSM_DLOAD_MODE
