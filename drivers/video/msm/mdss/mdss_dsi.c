@@ -2942,6 +2942,7 @@ static int mdss_dsi_cont_splash_config(struct mdss_panel_info *pinfo,
 				       struct mdss_dsi_ctrl_pdata *ctrl_pdata)
 {
 	void *clk_handle;
+	int data;
 	int rc = 0;
 
 	if (pinfo->cont_splash_enabled) {
